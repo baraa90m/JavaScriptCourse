@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Program</title>
+</head>
+<body>
+    <h1>JavaScript Conditional Statement!</h1>
+
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+
+        const hour = new Date().getHours();
+
+        let message;
+
+        if(hour < 10){
+            message = "Good Morning!";
+        }
+        else if(hour < 20){
+            message = "Good Day!";
+        }
+        else
+        {
+            message = "Good Evening!";
+        }
+
+        // JavaScript Elements here
+
+        document.getElementById("demo").innerHTML = message;
+
+    </script>
+</body>
+</html>
